@@ -1,5 +1,5 @@
 include: "/dashboards/*.lookml"
-connection: "looker-private-demo"
+connection: "rob_argolis"
 label: "SaaS"
 
 include: "/sfdc_views/*.view.lkml"
