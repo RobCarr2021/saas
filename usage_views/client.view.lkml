@@ -3,7 +3,7 @@ view: client {
   drill_fields: [id]
 
   dimension: id {
-    hidden: yes
+    hidden: no
     primary_key: yes
     type: string
     sql: ${TABLE}.ID ;;
