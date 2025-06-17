@@ -1,6 +1,7 @@
 view: daily_client_usage {
   derived_table: {
     datagroup_trigger: event_trigger
+    publish_as_db_view: yes
     partition_keys: ["event_date"]
     sql: SELECT
               date(timestamp(DATETIME_SUB(event_logs.timestamp, INTERVAL (DATE_DIFF(date '2020-05-03', current_date(), DAY)) DAY))) as event_date,
